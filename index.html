@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular Practice</title>
+    <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  </head>
+  <body ng-app="TravelApp">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1" ng-controller="BookCtrl">
+          <h1 class="text-center">Wide World Travel Guides</h1>
+          <div class="text-center" ng-repeat="book in books.guides">
+            <h1>{{book.title}}</h1>
+            <h4>type: ({{book.type}})</h4>
+            <h3>price: ${{book.price}}</h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
+
+
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/controllers/BookCtrl.js"></script>
+
+
+  </body>
+</html>
