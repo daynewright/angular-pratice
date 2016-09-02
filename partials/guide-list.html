@@ -1,0 +1,8 @@
+<div class="col-md-10 col-md-offset-1" ng-controller="BookCtrl">
+  <h1 class="text-center">Wide World Travel Guides</h1>
+  <div class="text-center" ng-repeat="book in books.guides">
+    <h1>{{book.title}}</h1>
+    <h4>type: ({{book.type}})</h4>
+    <h3>price: ${{book.price}}</h3>
+  </div>
+</div>
